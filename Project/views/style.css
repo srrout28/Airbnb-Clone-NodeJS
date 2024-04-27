@@ -1,0 +1,245 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Default parameter selected */
+
+body{
+  /* width: 100vw;
+  height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Body aligned */
+/* ------------------End of common CSS---------------- */
+
+/* ------------------nav bar CSS---------------- */
+
+.navbar{
+  width: 100%;
+  margin-top: 0;
+  background-color: white !important;
+}
+/* Nav bar CSS changed */
+
+.iconed-dropdown{
+  width: 90px;
+  height: 45px;
+  border: 2px solid black;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* float: right; */
+  margin-left: 50%;
+}
+
+.fa-bars, .fa-circle-user, .fa-magnifying-glass{
+  font-size: 25px;
+}
+/* Icon font size... */
+
+.search-btn{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff385c;
+  color: white;
+  border: none;
+}
+/* Search button modified */
+
+.iconed-dropdown:hover{
+  box-shadow: 0px 0px 10px gray;
+}
+/* Hover effect given to dropdown menu */
+
+.anc-create-prop{
+  background-color: #7158e2;
+  color: white !important;
+}
+/* Property creation link highlited!!! */
+
+.dropdown-item:hover{
+  background-color: #ff385c;
+  color: white !important;
+  /* color: black;
+  background-color: white !important; */
+}
+/* Dropdown hover effect */
+
+.search-container{
+  width: 75%;
+  height: auto;
+  padding: 11px;
+  border: 2px solid gray;
+  border-radius: 30px;
+  /* display: flex;
+  justify-content: space-evenly;
+  align-items: center; */
+}
+
+@media screen and (max-width: 780px) {
+  .search-container{
+    width: 95%;
+    border: none;
+    display: block;
+  }
+}
+/* Responsive UI designed... */
+/* ------------------End of nav bar---------------- */
+
+/* ------------------Item Division/Card property---------------- */
+
+.property-card{
+  width: 80%;
+  margin: 2% 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* Property display card designed */
+
+.item-container{
+  width: 320px;
+  height: 400px;
+  margin: 2% 0%;
+  /* background-color: #f7f1e3; */
+  /* border: 1px solid gray */
+}
+/* Item container designed which displays property details */
+
+.item-container:hover{
+  box-shadow: 0px 0px 15px gray;
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+/* Hover effect given */
+
+.item-image{
+  width: 100%;
+  height: 60%;
+  cursor: pointer;
+  border: 1px solid gray;
+}
+/* Property image customised */
+
+.item-rating{
+  font-size: 13px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.fa-star{
+  color: rgb(255, 217, 0);
+  font-size: 12px;
+  margin-left: 0px;
+}
+
+.item-brand-name{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  color: #282c3f;
+  margin: 0px 0px 3px 5px;
+  padding: 3px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item-name{
+  color: #535766;
+  font-size: 14px;
+  line-height: 1;
+  margin: 3px 0px 0px 5px;
+  padding: 3px 0px;
+  /* margin-left: 0px;
+  margin-right: 0px; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  display: block;
+  white-space: nowrap;
+}
+
+.item-price{
+  font-size: 14px;
+  line-height: 15px;
+  color: #282c3f;
+  white-space: nowrap;
+  margin: 7px 0px 0px 5px;
+}
+
+.item-add-cart{
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.btn-add-bag{
+  width: 90%;
+  background-color: rgb(116, 248, 116);
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 5px;
+}
+/* Booking button designed */
+
+.btn-booking{
+  width: 90%;
+  color: black !important;
+  background-color: rgb(116, 248, 116);
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 5px;
+}
+/* Booking button designed */
+
+.btn-add-bag:hover{
+  background-color: #ff385c;
+  color: white;
+  transition: all 0.15s ease-in-out;
+}
+/* UI developed by hover effect */
+
+.btn-booking:hover{
+  background-color: #ff385c;
+  color: white !important;
+  transition: all 0.15s ease-in-out;
+}
+/* UI developed by hover effect */
+/* --------------------End of Item Division---------------------- */
+
+/* --------------------User/Admin panel page common heading desing---------------------- */
+
+.head-title{
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100px;
+  height: auto;
+  color: white;
+  background-color: #ff385c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------------End of User/Admin panel page common heading design---------------------- */
